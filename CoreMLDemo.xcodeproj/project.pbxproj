@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7719DA032D07DB78001A4016 /* CoreMLDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719DA022D07DB78001A4016 /* CoreMLDemoApp.swift */; };
+		7719DA052D07DB78001A4016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719DA042D07DB78001A4016 /* ContentView.swift */; };
+		7719DA072D07DB7B001A4016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7719DA062D07DB7B001A4016 /* Assets.xcassets */; };
+		7719DA0A2D07DB7B001A4016 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7719DA092D07DB7B001A4016 /* Preview Assets.xcassets */; };
+		7719DA1A2D07EA0F001A4016 /* SentimentAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719DA162D07EA0F001A4016 /* SentimentAnalysisView.swift */; };
+		7719DA1D2D07EA0F001A4016 /* SentimentAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719DA192D07EA0F001A4016 /* SentimentAnalyzer.swift */; };
+		7719DA302D08289C001A4016 /* FaceAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719DA2F2D08289C001A4016 /* FaceAnalyzer.swift */; };
+		7719DA5F2D0830E1001A4016 /* FaceAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7719DA5E2D0830E1001A4016 /* FaceAnalysisView.swift */; };
+		77B782A92D084AC700B5746F /* HandwritingRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B782A72D084AC700B5746F /* HandwritingRecognizer.swift */; };
+		77B782AA2D084AC700B5746F /* HandwritingRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B782A82D084AC700B5746F /* HandwritingRecognitionView.swift */; };
+		77B782AE2D084CD700B5746F /* PoseEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B782AC2D084CD700B5746F /* PoseEstimator.swift */; };
+		77B782AF2D084CD700B5746F /* PoseEstimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B782AD2D084CD700B5746F /* PoseEstimationView.swift */; };
+		77B782C02D08529D00B5746F /* model_cpm.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 77B782BF2D08529D00B5746F /* model_cpm.mlmodel */; };
+		D7231BD146FC80F0357FA685 /* Pods_CoreMLDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE6FACECF887AFE92108C08 /* Pods_CoreMLDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6FE6FACECF887AFE92108C08 /* Pods_CoreMLDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreMLDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7719D9FF2D07DB78001A4016 /* CoreMLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7719DA022D07DB78001A4016 /* CoreMLDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLDemoApp.swift; sourceTree = "<group>"; };
+		7719DA042D07DB78001A4016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7719DA062D07DB7B001A4016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7719DA092D07DB7B001A4016 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7719DA162D07EA0F001A4016 /* SentimentAnalysisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentimentAnalysisView.swift; sourceTree = "<group>"; };
+		7719DA192D07EA0F001A4016 /* SentimentAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentimentAnalyzer.swift; sourceTree = "<group>"; };
+		7719DA2F2D08289C001A4016 /* FaceAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceAnalyzer.swift; sourceTree = "<group>"; };
+		7719DA5E2D0830E1001A4016 /* FaceAnalysisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceAnalysisView.swift; sourceTree = "<group>"; };
+		77B782A72D084AC700B5746F /* HandwritingRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandwritingRecognizer.swift; sourceTree = "<group>"; };
+		77B782A82D084AC700B5746F /* HandwritingRecognitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandwritingRecognitionView.swift; sourceTree = "<group>"; };
+		77B782AC2D084CD700B5746F /* PoseEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseEstimator.swift; sourceTree = "<group>"; };
+		77B782AD2D084CD700B5746F /* PoseEstimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoseEstimationView.swift; sourceTree = "<group>"; };
+		77B782BF2D08529D00B5746F /* model_cpm.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = model_cpm.mlmodel; sourceTree = "<group>"; };
+		A9EF1BF2DA0DB17A4AFEFB06 /* Pods-CoreMLDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreMLDemo.debug.xcconfig"; path = "Target Support Files/Pods-CoreMLDemo/Pods-CoreMLDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F61F6BC4B417115DF8C0734E /* Pods-CoreMLDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreMLDemo.release.xcconfig"; path = "Target Support Files/Pods-CoreMLDemo/Pods-CoreMLDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7719D9FC2D07DB78001A4016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7231BD146FC80F0357FA685 /* Pods_CoreMLDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7719D9F62D07DB78001A4016 = {
+			isa = PBXGroup;
+			children = (
+				7719DA012D07DB78001A4016 /* CoreMLDemo */,
+				7719DA002D07DB78001A4016 /* Products */,
+				82FCE81FCB4AB27242D1571E /* Pods */,
+				971C7053B0BCC154E5A8BCD7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7719DA002D07DB78001A4016 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7719D9FF2D07DB78001A4016 /* CoreMLDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7719DA012D07DB78001A4016 /* CoreMLDemo */ = {
+			isa = PBXGroup;
+			children = (
+				77B782BE2D08526700B5746F /* Models */,
+				77B782AB2D084CD700B5746F /* PoseEstimation */,
+				77B782A62D084AC700B5746F /* HandwritingRecognition */,
+				7719DA2E2D08289C001A4016 /* FaceAnalysis */,
+				7719DA152D07EA0F001A4016 /* TextAnalystis */,
+				7719DA022D07DB78001A4016 /* CoreMLDemoApp.swift */,
+				7719DA042D07DB78001A4016 /* ContentView.swift */,
+				7719DA062D07DB7B001A4016 /* Assets.xcassets */,
+				7719DA082D07DB7B001A4016 /* Preview Content */,
+			);
+			path = CoreMLDemo;
+			sourceTree = "<group>";
+		};
+		7719DA082D07DB7B001A4016 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7719DA092D07DB7B001A4016 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7719DA152D07EA0F001A4016 /* TextAnalystis */ = {
+			isa = PBXGroup;
+			children = (
+				7719DA162D07EA0F001A4016 /* SentimentAnalysisView.swift */,
+				7719DA192D07EA0F001A4016 /* SentimentAnalyzer.swift */,
+			);
+			path = TextAnalystis;
+			sourceTree = "<group>";
+		};
+		7719DA2E2D08289C001A4016 /* FaceAnalysis */ = {
+			isa = PBXGroup;
+			children = (
+				7719DA5E2D0830E1001A4016 /* FaceAnalysisView.swift */,
+				7719DA2F2D08289C001A4016 /* FaceAnalyzer.swift */,
+			);
+			path = FaceAnalysis;
+			sourceTree = "<group>";
+		};
+		77B782A62D084AC700B5746F /* HandwritingRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				77B782A72D084AC700B5746F /* HandwritingRecognizer.swift */,
+				77B782A82D084AC700B5746F /* HandwritingRecognitionView.swift */,
+			);
+			path = HandwritingRecognition;
+			sourceTree = "<group>";
+		};
+		77B782AB2D084CD700B5746F /* PoseEstimation */ = {
+			isa = PBXGroup;
+			children = (
+				77B782AC2D084CD700B5746F /* PoseEstimator.swift */,
+				77B782AD2D084CD700B5746F /* PoseEstimationView.swift */,
+			);
+			path = PoseEstimation;
+			sourceTree = "<group>";
+		};
+		77B782BE2D08526700B5746F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				77B782BF2D08529D00B5746F /* model_cpm.mlmodel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		82FCE81FCB4AB27242D1571E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9EF1BF2DA0DB17A4AFEFB06 /* Pods-CoreMLDemo.debug.xcconfig */,
+				F61F6BC4B417115DF8C0734E /* Pods-CoreMLDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		971C7053B0BCC154E5A8BCD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FE6FACECF887AFE92108C08 /* Pods_CoreMLDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7719D9FE2D07DB78001A4016 /* CoreMLDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7719DA0D2D07DB7B001A4016 /* Build configuration list for PBXNativeTarget "CoreMLDemo" */;
+			buildPhases = (
+				78D93F9D6D0A972D876B41CD /* [CP] Check Pods Manifest.lock */,
+				7719D9FB2D07DB78001A4016 /* Sources */,
+				7719D9FC2D07DB78001A4016 /* Frameworks */,
+				7719D9FD2D07DB78001A4016 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreMLDemo;
+			productName = CoreMLDemo;
+			productReference = 7719D9FF2D07DB78001A4016 /* CoreMLDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7719D9F72D07DB78001A4016 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					7719D9FE2D07DB78001A4016 = {
+						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
+					};
+				};
+			};
+			buildConfigurationList = 7719D9FA2D07DB78001A4016 /* Build configuration list for PBXProject "CoreMLDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7719D9F62D07DB78001A4016;
+			productRefGroup = 7719DA002D07DB78001A4016 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7719D9FE2D07DB78001A4016 /* CoreMLDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7719D9FD2D07DB78001A4016 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7719DA0A2D07DB7B001A4016 /* Preview Assets.xcassets in Resources */,
+				7719DA072D07DB7B001A4016 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78D93F9D6D0A972D876B41CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreMLDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7719D9FB2D07DB78001A4016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B782AF2D084CD700B5746F /* PoseEstimationView.swift in Sources */,
+				7719DA052D07DB78001A4016 /* ContentView.swift in Sources */,
+				7719DA032D07DB78001A4016 /* CoreMLDemoApp.swift in Sources */,
+				77B782C02D08529D00B5746F /* model_cpm.mlmodel in Sources */,
+				77B782A92D084AC700B5746F /* HandwritingRecognizer.swift in Sources */,
+				7719DA1D2D07EA0F001A4016 /* SentimentAnalyzer.swift in Sources */,
+				77B782AA2D084AC700B5746F /* HandwritingRecognitionView.swift in Sources */,
+				7719DA5F2D0830E1001A4016 /* FaceAnalysisView.swift in Sources */,
+				7719DA1A2D07EA0F001A4016 /* SentimentAnalysisView.swift in Sources */,
+				7719DA302D08289C001A4016 /* FaceAnalyzer.swift in Sources */,
+				77B782AE2D084CD700B5746F /* PoseEstimator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7719DA0B2D07DB7B001A4016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7719DA0C2D07DB7B001A4016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7719DA0E2D07DB7B001A4016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9EF1BF2DA0DB17A4AFEFB06 /* Pods-CoreMLDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CoreMLDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 4P67WD39K6;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "人脸使用相机";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "人脸使用相册";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoreMLDemo.www.CoreMLDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7719DA0F2D07DB7B001A4016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F61F6BC4B417115DF8C0734E /* Pods-CoreMLDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CoreMLDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 4P67WD39K6;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "人脸使用相机";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "人脸使用相册";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoreMLDemo.www.CoreMLDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7719D9FA2D07DB78001A4016 /* Build configuration list for PBXProject "CoreMLDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7719DA0B2D07DB7B001A4016 /* Debug */,
+				7719DA0C2D07DB7B001A4016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7719DA0D2D07DB7B001A4016 /* Build configuration list for PBXNativeTarget "CoreMLDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7719DA0E2D07DB7B001A4016 /* Debug */,
+				7719DA0F2D07DB7B001A4016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7719D9F72D07DB78001A4016 /* Project object */;
+}
